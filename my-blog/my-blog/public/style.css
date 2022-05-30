@@ -1,0 +1,141 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+@font-face {
+    font-family: bahnschrift;
+    src: url("/bahnschrift.ttf");
+
+}
+
+.nav{
+    margin: 0 auto;
+    width: 85%;
+    border-color: rgb(30, 34, 80);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    background-color: rgba(75, 61, 35, 0.096);
+    
+}
+.nav-con li{
+    display: inline;
+    padding-left: 7%;
+
+   
+}
+.nav-con a{
+    font-size: 18pt;
+    text-decoration: none;
+    font-family: "bahnschrift";
+    
+}
+.nav-con a:link{
+    color: rgb( 12, 15, 58);
+}
+.nav-con a:visited{
+    color: rgb(12, 15, 58);
+}
+.nav-con a:hover{
+    color: rgb(77, 67, 54);
+}
+
+.nav-con ul{
+    padding: 0.1%;
+    text-align: center;
+
+
+}
+
+
+/*
+.nav{
+    padding: 5%;
+
+}*/
+.banner{
+    
+    vertical-align: bottom;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.07%;
+}
+.blog-title{
+    text-align: center;
+    font-size: 13pt;
+    font-family: "bahnschrift";
+    
+}
+.blog-title a{
+    text-decoration: none;
+}
+.blog-title a:link{
+    color: rgb( 12, 15, 58);
+
+}
+.blog-title a:visited{
+    color: rgb( 12, 15, 58);
+
+}
+#blog-body{
+    text-indent: 25px;
+    font-size: 10pt;
+    font-family: "bahnschrift";
+    padding: 3%;
+}
+.b{
+    float: left;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 15%;
+    border-color: rgba(75, 61, 35, 0.05);
+    width: 350px;
+    height: 350px;
+    margin: 2%;
+    word-wrap: break-word;
+    padding-top: 0.75%;
+    background-color: rgba(75, 61, 35, 0.05);
+}
+.b ul{
+    list-style: none;
+
+}
+.container{
+    width: 88%
+    
+    
+}
+.pagination{
+    
+    list-style: none;
+    width: 88%;
+    float: left;
+    text-align: center;
+    font-size: 15pt;
+    
+    
+}
+.pagination li{
+    display: inline-block;
+    padding: 8px 16px;
+
+
+}
+.pagination a{
+    color: black;
+    border-radius: 5px;
+    
+    text-decoration: none;
+    transition: background-color.6s;
+}
+.pagination a:hover{
+    color: rgb(114, 86, 50);
+}
+.pagination a:active{
+    background-color: rgba(75, 61, 35, 0.05);
+    padding: 8px 16px;
+
+}
