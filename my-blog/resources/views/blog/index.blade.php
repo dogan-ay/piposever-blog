@@ -16,7 +16,7 @@
                 </div>   --->
                             
                     @forelse($posts as $post)
-            <div class="container">     
+            <div class="container">    
                     <div class="b">
                         <ul>
                             <div class="blog-title"><li><a id="bloglink" href="./blog/{{ $post->id }}">{{ ucfirst($post->title) }}</a> <br> 

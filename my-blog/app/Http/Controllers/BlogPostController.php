@@ -16,10 +16,25 @@ class BlogPostController extends Controller
     {
         //
         $posts = BlogPost::orderBy("created_at","desc")->paginate(6);
-    
-        return view('blog.index', [
+        
+        return view('index', [
             'posts' => $posts,
-        ]);
+        ]
+    );
+    }
+
+
+    /*categories*/
+
+    public function category($category)
+    {
+        //
+        $posts = BlogPost::where('category',$category)->orderBy("created_at","desc")->paginate(6);
+        
+        return view('blog.category', [
+            'posts' => $posts,
+        ]
+    );
     }
 
     /**
