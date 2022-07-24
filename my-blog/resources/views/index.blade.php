@@ -23,8 +23,11 @@
                     </div>
             </div>
             <livewire:trend-post /> 
+            <livewire:comments /> 
 
-            <livewire:pagination /> 
+            <livewire:pagination />
+
+
 
 
     </main>     
