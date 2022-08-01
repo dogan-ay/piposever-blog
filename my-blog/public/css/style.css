@@ -359,13 +359,13 @@ main {
 
 .post{
     display: flex;
-    width: 72vw;
-    padding-bottom: 0.40%;
+    width: 82vw;
+    padding-bottom: 1%;
     padding-top: 1%;
     margin: 0 auto;
     padding-left: 1%;
     padding-right: 1%;
-    line-height: 20px;
+    line-height: 1.3vw;
     font-family: 'Inter Bold', sans-serif;
     transition: 0.2s;
 
@@ -381,10 +381,12 @@ main {
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
     transition: 0.5s;
+    font-size: 1vw;
+    margin: 0;
 }
 .post h2 {
     color: #292929;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -418,19 +420,22 @@ main {
     max-width: 20vw;
 }
 .postImg img{
-    width: 100%;
+    width: 95%;
     cursor:pointer;
 }
 
 .postDetails {
     display: flex;
-    margin-top: -2%;
+    margin-top: 1%;
+    padding-top: 1%;
+    border-top: 0.01vw #26262646 solid;
     
 }
 
+
 .postDetails p {
     padding-right: 1%;
-    font-size: 0.9rem;
+    font-size: 0.9vw;
     color: #8d867c;
 }
 
@@ -445,10 +450,10 @@ main {
     background-color: #77726b4f;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
-    padding-top: 0.05vw;
-    padding-bottom: 0.05vw;
+    padding-top: 0.09vw;
+    padding-bottom: 0.09vw;
     border-radius: 50px;
-    font-size: 0.9rem;
+    font-size: 0.9vw;
     transition: 0.5s;
 
 }
@@ -481,13 +486,28 @@ main {
     width: 100%;
     height: 55vw;
     background-color: rgb(26, 26, 26);
+    margin: 5% 0 5% 0;
+}
+
+#commentsTitle {
+    
+    position: relative;
+    top: 8%;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#commentsTitle h3 {
+    color: #fbf0df;
+    text-align: center;
+    font-size: 1.8vw;
 }
 
 #commentsContainer {
     width: 80%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin: 0 auto;
     color: #1a1a1a;
@@ -517,8 +537,121 @@ main {
     overflow: hidden;
 }
 
+
+.commentsBorder img {
+    width: 100%;
+}
+
 .commentText {
     padding: 6%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.commentText h3 {
+    font-size: 1.4vw;
+    margin-bottom: 5%;
+
+}
+
+.commentText p {
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+#commentDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 15%;
+}
+
+#commentDetails p {
+    font-size: 1vw;
+}
+
+.commentsContent {
+    width: 25%;
+    height: 70%;
+    color: #fbf0df;
+    /*font-family: "Port Lligat Sans";*/
+    font-family: "Voces";
+    font-size: 1.1vw;
+}
+
+.commentsContent p {
+    margin-bottom: 6%;
+}
+
+.commentsContent h3 {
+    font-size: 1.8vw;
+    color: #F5DBB2;
+    margin-bottom: 10%;
+}
+.commentsContent ul {
+    list-style: none;
+    padding-left: 10%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.commentsContent li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 5%;
+    
+}
+
+#listString1 > p {
+    position: relative;
+    top: 21px;
+    padding-left: 0.5vw;
+    font-size: 1.2vw;
+    color: #F5DBB2;
+
+
+}
+#listString2 > p {
+    position: relative;
+    top: 15px;
+    padding-left: 0.5vw;
+    font-size: 1.2vw;
+        color: #F5DBB2;
+
+
+}
+#listString3 > p {
+    position: relative;
+    top: 11px;
+    padding-left: 0.5vw;
+    font-size: 1.2vw;
+        color: #F5DBB2;
+
+
+}
+
+
+#commentButton {
+    width: 90%;
+    height: 8%;
+    border: 1px solid #F5DBB2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 7%;
+}
+#commentButton a {
+    color: #F5DBB2;
+    text-decoration: none;
+    font-size: 1.2vw;
+
+}
+
+#commentbuttonImg {
+    width: 7%;
 }
 
 /* Comments Section Styles End */

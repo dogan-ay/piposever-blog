@@ -18,7 +18,7 @@
                                 @php
                                 \Carbon\Carbon::setLocale('tr');
                                 @endphp
-                                <p>{{ \Carbon\Carbon::parse($post->created_at)->translatedFormat('F jS') }}</p>
+                                <p>{{ \Carbon\Carbon::parse($post->created_at)->translatedFormat('jS F') }}</p>
                                 <strong>·</strong>
                                 <p> {{Str::readDuration($post->body). ' dk. okuma'}}</p>
                                 <strong>·</strong>
