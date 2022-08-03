@@ -1,3 +1,31 @@
+<div id="footer">
+    <footer>
+        <div id="footerLeft">
+            <div id="footerUp">
+                <div id="footerImg">           
+                    <img src="{{asset('smoker (2).svg')}}" alt="">
+                </div>
+                <div id="footerImgSecond">
+                    <img src="{{asset('piposever1.svg')}}" alt="">
+                </div>
+            </div>
+            <div id="footerDown">
+                <div id="footerIcons">
+                    <ul>
+                        <li><div class="footerIconContainer"><img src="{{asset('spotify.svg')}}" alt=""></div></li>
+                        <li><div class="footerIconContainer"><img src="{{asset('facebook.svg')}}" alt=""></div></li>
+
+                        <li><div class="footerIconContainer"><img src="{{asset('twitter.svg')}}" alt=""></div></li>
+                    </ul>
+                </div>
+                <p>Copyright piposever 2022 <br> Design & Development Doğan Ay Şengül</p>
+            </div>
+
+        </div>
+        <div id="footerRight"> </div>
+    </footer>
+</div>
+</main>     
 
     @livewireScripts
 

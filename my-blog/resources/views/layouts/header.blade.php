@@ -71,10 +71,10 @@
         <header>
             <nav>
                 <div class="navRow">
-                                <div id="kategoriButon" x-data>
+                                <div id="kategoriButon">
                                     
                                     <div id="kategoriMenuSvg">
-                                        <a @click="menuShow()" @click.outside="closeMenu()">
+                                        <a onclick="menuShow()">
                                             <span >
                                                 <svg fill="#fbf0df" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
                                             </span>
@@ -92,13 +92,13 @@
                     </div>
                                                                                                                                                                                              
                 </div>
-                <div id="overlay" class=""></div>
+                <div id="overlay" class="" onclick="closeMenu()"></div>
 
                 <div id="categoryMenu" class="">
                    <div id="menuContainer">
                         <div id="pipeLover">
                                 <h3>piposever</h3>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <svg onclick="closeMenu()" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                 </svg>
 
