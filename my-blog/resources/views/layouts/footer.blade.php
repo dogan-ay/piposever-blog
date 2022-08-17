@@ -216,10 +216,10 @@
     </footer>
     <div id="footerText"><p>Copyright piposever 2022 - Design & Development Doğan Ay Şengül</p></div>
 
+</div></main>     
+
+
 </div>
-
-</main>     
-
     @livewireScripts
 
 </body>

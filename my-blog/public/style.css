@@ -1,11 +1,15 @@
-* {
-
+.wrapper {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    min-height:100vh;
+    justify-content: center;
 }
 
 body{
     padding: 0;
     margin: 0;
-
+   
 }
 
 
@@ -68,6 +72,10 @@ body{
 
 
 /*Side Menu*/
+.navSpace {
+    width: 0%;
+    height: 4vw;
+}
 #overlay {
 
         width: 100vw;
@@ -370,7 +378,7 @@ main {
     line-height: 1.3vw;
     font-family: 'Inter Bold', sans-serif;
     transition: 0.2s;
-
+    
 
 }
 
@@ -842,6 +850,8 @@ main {
     background-color: rgb(17, 17, 17);
     margin-top: 5%;
     margin-bottom: 0;
+    align-self: flex-end;
+    
 }
 
 footer {
@@ -1106,9 +1116,56 @@ footer {
         width: 5%;
     }
 
-    
-
     /* Navbar Styles End */
+
+    /* Side Menu Styles */
+
+    #categoryMenu {
+        width: 80vw;
+        left: -80vw;
+
+    }
+
+
+    .navSlide {
+        position: fixed !important;
+        left: 80vw !important;
+    }
+    
+    .mainSlide {
+        position: relative;
+        left: 80vw;
+    }
+
+    #pipeLover h3{
+        font-size: 7vw;
+    }
+
+    #menuText i {
+        font-size: 4vw;
+    }
+
+    
+    #menuSvg {
+        width: 35vw;
+        height: 35vw;
+        
+    }
+
+    .pngContainer {
+        width: 10vw;
+    }
+
+    .iconContainer {
+        width: 10vw;
+    }
+
+    .categoryRow a {
+        font-size: 5vw;
+
+    }
+
+    /* Side Menu Styles End */
 
     /* First Post Styles */
 

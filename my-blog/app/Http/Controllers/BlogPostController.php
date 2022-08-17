@@ -27,12 +27,13 @@ class BlogPostController extends Controller
     public function category($category)
     {
         //
-        $posts = BlogPost::where('category',$category)->orderBy("created_at","desc")->paginate(6);
+       // $posts = BlogPost::where('category',$category)->orderBy("created_at","desc")->paginate(6);
         
-        return view('blog.category', [
-            'posts' => $posts,
-        ]
-    );
+      //  return view('blog.category', [
+      //      'categoryName' => $category,
+      //  ]
+    //);
+        return view('blog.category', compact('category'));
     }
 
     /**
