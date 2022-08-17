@@ -16,6 +16,6 @@ mix.js('resources/js/app.js', 'public/js')
         //
     ]);
 
-mix.styles(['public/style.css','public/index.css'], 'public/css/style.css')
+mix.styles(['public/style.css','public/index.css','public/css/owl.carousel.min.css','public/css/owl.theme.default.css'], 'public/css/style.css')
     
     .sass('public/style.scss', 'public/css');

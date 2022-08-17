@@ -163,7 +163,7 @@ main {
 
 
 #pipeLover svg:hover {
-    fill: #fcb54b;
+    fill: #bda37b;
 }
 
 #menuSvg {
@@ -277,21 +277,21 @@ main {
 
 #kategoriMenuSvg {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 #kategoriButon svg {
     width: 100%;
-    transition: 1s;
+    transition: 0.5s;
 
 }
 
-#kategoriButon:hover {
-    transform: scale(1.03);
-}
 
 #kategoriButon:hover svg {
-    fill: #fcb54b;
+    fill: #bda37b;
 
 }
 
@@ -337,6 +337,7 @@ main {
     padding: 1vw 0 1vw 0;
     transition: 0.5s;
     cursor: pointer;
+    
 }
 
 .firstContent p {
@@ -442,6 +443,7 @@ main {
 
 .postDetails strong {
     padding-right: 1%;
+    font-size: 1vw;
 
 }
 
@@ -485,24 +487,91 @@ main {
 
 #commentsBack {
     width: 100%;
-    height: 55vw;
-    background-color: rgb(26, 26, 26);
+    height: 40vw;
+    background-color: #f5e7d2;
     margin: 5% 0 5% 0;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    overflow: hidden;
+
 }
 
-#commentsTitle {
-    
+#commentsSlideContainer {
     position: relative;
-    top: 8%;
-    margin: 0 auto;
-    width: 30%;
+    width: 80%;
+    left: 15%;
+
 }
 
-#commentsTitle h3 {
-    color: #fbf0df;
-    text-align: center;
-    font-size: 1.8vw;
+.owl-item {
+    padding-right: 1%;
 }
+
+.carouselSide {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carouselSide  h3{
+    font-size: 1.6vw;
+    margin-bottom: 10%;
+    
+}
+
+.carouselSide  p{
+        font-size: 1vw;
+        margin: 0;
+        padding: 0;
+
+}
+
+#commentButtonMobile {
+    display: none;
+}
+
+/* Arrow Styles */
+
+.carouselArrow {
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+}
+
+#leftArrow {
+    position: relative;
+    width: 15%;
+    cursor: pointer;
+    transition: right 0.2s;
+    transition-timing-function: ease-in;
+    right: 0;
+}
+
+#rightArrow {
+    position: relative;
+    width: 15%;
+    cursor: pointer;
+    transition: left 0.2s;
+    transition-timing-function: ease-in;
+    left: 0;
+}
+
+#leftArrow:hover {
+    right: 3%;
+}
+
+#rightArrow:hover {
+    left: 3%;    
+}
+
+/* Arrow Styles End */
+/*Comment Section Version-2 Styles*/
 
 #commentsContainer {
     width: 80%;
@@ -518,23 +587,20 @@ main {
 .comments {
     /*background: linear-gradient(61deg, rgba(251,223,248,1) 0%, rgba(223,234,251,1) 50%, rgba(223,251,226,1) 100%);*/
     /*background: linear-gradient(61deg, #f795ed 0%, #9cbff5 50%, #a7f2af 100%);*/
-    background: linear-gradient(61deg, #9a5d95 0%, #5d7499 50%, #517755 100%);
+   /* background: linear-gradient(61deg, #9a5d95 0%, #5d7499 50%, #517755 100%);
     background: linear-gradient(61deg, rgba(124,110,90,1) 0%, rgba(205,183,149,1) 50%, rgba(242,219,182,1) 100%);
-
-
-    width: 25%;
-    height: 70%;
-    margin-left: 1%;
+*/
+    width: 100%;
 
 }
 
 
 .commentsBorder {
     margin: 0 auto;
-    margin-top: 5%;
-    width: 90%;
-    height: 50%;
-    border: 3px #262626 solid;
+    width: 20vw;
+    height: 20vw;
+    border: 1px #262626 solid;
+    border-radius: 50%;
     overflow: hidden;
 }
 
@@ -552,7 +618,8 @@ main {
 
 .commentText h3 {
     font-size: 1.4vw;
-    margin-bottom: 5%;
+    text-align: center;
+    margin: 0 auto;
 
 }
 
@@ -565,7 +632,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    margin-top: 15%;
+    margin-top: 1%;
+    padding-left: 4%;
 }
 
 #commentDetails p {
@@ -607,7 +675,7 @@ main {
 
 #listString1 > p {
     position: relative;
-    top: 21px;
+    top: 1vw;
     padding-left: 0.5vw;
     font-size: 1.2vw;
     color: #F5DBB2;
@@ -616,7 +684,7 @@ main {
 }
 #listString2 > p {
     position: relative;
-    top: 15px;
+    top: 0.6vw;
     padding-left: 0.5vw;
     font-size: 1.2vw;
         color: #F5DBB2;
@@ -625,7 +693,7 @@ main {
 }
 #listString3 > p {
     position: relative;
-    top: 11px;
+    top: 0.4vw;
     padding-left: 0.5vw;
     font-size: 1.2vw;
         color: #F5DBB2;
@@ -635,25 +703,37 @@ main {
 
 
 #commentButton {
-    width: 90%;
+    width: 100%;
     height: 8%;
-    border: 1px solid #F5DBB2;
+    border: 0.1vw solid rgb(26, 26, 26);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     gap: 7%;
+    cursor: pointer;
+    margin-top: 5%;
 }
 #commentButton a {
-    color: #F5DBB2;
+    color: rgb(26, 26, 26);
     text-decoration: none;
     font-size: 1.2vw;
-
+    line-height: 0;
+    user-select: none;
 }
 
 #commentbuttonImg {
     width: 7%;
+    user-select: none;   
 }
+
+#commentButtonLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
 
 /* Comments Section Styles End */
 
@@ -716,8 +796,8 @@ main {
     align-items: center;
     gap: 5%;
     margin: 0 auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     width: 15vw;
     height: 3vw;
     border: 0.1vw solid #262626;
@@ -930,10 +1010,11 @@ footer {
         background-color: #fbf0df;
         border: none;
         padding-left: 5%;
+        font-size: 1vw;
 
        
     }
-
+    
     #footerRight input:focus {
         border: none;
         outline: none;
@@ -955,6 +1036,7 @@ footer {
         
         font-size: 4.1vw;
         position: relative;
+        margin-bottom: 1vw;
     }
     .postDetails p, .postDetails a{
         font-size: 2.5vw;
@@ -970,7 +1052,7 @@ footer {
 
         padding-left: 5%;
         padding-right: 5%;
-        
+       
     }
 
     .postImg{
@@ -985,7 +1067,6 @@ footer {
     .icerik > p{
         font-size: 2.7vw;
         overflow:hidden; 
-       
         text-overflow:ellipsis; 
         display: -webkit-box;
         -webkit-line-clamp: 2; 
@@ -997,145 +1078,345 @@ footer {
     }
         
     .postDetails {
-        margin-top: -15px;
+        border: none;
     }
     .postDetails strong {
         padding-right: 1vw;
+        font-size: 2vw;
 
     }
     .postDetails a{
+        display: none;
+
     }
+    /* Navbar Styles */
+
+    .navRow {
+        height: 12vw;
+        padding-left: 5%;
+        gap: 15%;
+
+    }
+
+    #logoText {
+        width: 25vw;
+    }
+
+    #kategoriButon {
+        width: 5%;
+    }
+
+    
+
+    /* Navbar Styles End */
+
+    /* First Post Styles */
+
+    #firstWrapper {
+        margin: 22% 0 10% 0;
+    
+    }
+
+    .firstCon {
+        flex-direction: column-reverse;
+        width: 90vw;
+        height: auto;
+    }
+
+    .firstPost {
+        width: 100%;
+        height: auto;
+    }
+
+    .firstImg {
+        width: 100%;
+
+    }
+
+    .firstContent {
+        padding: 7vw;
+    }
+
+    .firstContent h3 {
+        font-size: 7vw;
+        padding: 2vw 0;
+
+    }
+
+    .firstContent p {
+        font-size: 2.5vw;
+    }    
+
+    /* First Post Styles End */
+    .postUp {
+        width: 50vw;
+        margin-bottom: 5%;
+    }
+
+    .postUp p{
+        font-size: 4vw;
+    }
+
+    /* Comments Styles */
+
+    #commentsBack {
+        flex-direction: column;
+        height: auto;
+        padding: 15% 5%;
+        margin: 5% 0;
+    }
+    
+    #commentsSlideContainer {
+        width: 100%;
+        left: 0;
+    }
+
+    .carouselSide {
+        width: 100%;
+    }
+
+    .carouselSide  h3{
+        font-size: 6vw;
+        order: 1;
+        padding-bottom: 10%;
+        margin-bottom: 0%;
+        
+    }
+    
+    .carouselSide  p{
+            display: none; 
+    }
+    
+    .carouselArrow {
+        order: 3;
+        justify-content: center;
+        gap: 10%;
+        width: 50%;
+        padding-bottom: 10%;
+        margin-top: 0%;
+
+    }
+
+    #commentButton {
+        display: none;
+        
+    }
+
+    #commentButtonMobile {
+        width: 60%;
+        height: 8%;
+        border: 0.1vw solid rgb(26, 26, 26);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        gap: 7%;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 10%;
+        padding: 1%; 
+    }
+
+    #commentButtonMobile a {
+        color: rgb(26, 26, 26);
+        text-decoration: none;
+        font-size: 4vw;
+        line-height: 0;
+        user-select: none;
+    }
+    
+    #commentbuttonImgMobile {
+        width: 7%;
+        user-select: none;   
+    }
+
+    #commentButtonLinkMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+
+    .commentText {
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+        padding: 5% 0;
+
+    }
+
+    .commentText h3 {
+        font-size: 4vw;
+    }
+
+    .commentText p {
+        display: none;
+    }
+
+    .commentsBorder {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .owl-item {
+        padding: 0;
+    }
+    
+    .owl-dots {
+        text-align: center !important;
+        padding: 0 !important;
+      }
+
+    .owl-dots button.owl-dot {
+        width: 2.5vw !important;
+        height: 2.5vw !important;
+      }
+
+    /* Comments Styles End */
+
+    /* Pagination Button Styles */
+
+    #paginationButton {
+        width: 50vw;
+        height: 10vw;
+    }
+    
+    #paginationButton a{
+       font-size: 2.7vw;
+    }
+
+    /* Pagination Button Styles End */
+
+    /* Footer Styles */
+
+    #footer {
+        height: auto;
+    }    
+
+    footer {
+        flex-direction: column-reverse;
+        width: 80%;
+
+    }
+
+    #footerRight {
+        width: 100%;
+    }
+
+    #footerLeft {
+        width: 100%;
+    }
+
+    #footerUp {
+        justify-content: center;
+    }
+
+    #footerImgSecond {
+        margin-top: 3vw;
+    }
+
+    #footerIcons {
+        top: -6vw;
+        left: 11vw;
+    }
+    #footerRightContent {
+        margin-left: 0;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+
+        padding-bottom: 5%;
+
+        width: 100%;
+        border-bottom: 0.5vw solid #F5DBB2;
+    }
+
+    #footerRight h3{
+        font-size: 6vw;
+    }
+    #footerRightContent p{
+        font-size: 3vw;
+    }
+    #footerRight input {
+        width: 80%;
+        height: 8vw;
+        font-size: 3vw;
+
+    }
+    #footerRight button {
+        width: 20%;
+        height: 8vw;
+        font-size: 3vw;
+    }
+    /* Footer Styles End */
+
 }
+
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden;}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
 /*
-
-.nav{
-    margin: 0 auto;
-    width: 85%;
-    border-color: rgb(30, 34, 80);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 50px;
-    background-color: rgba(75, 61, 35, 0.096);
-    
-}
-.nav-con li{
-    display: inline;
-    padding-left: 7%;
-
-   
-}
-.nav-con a{
-    font-size: 18pt;
-    text-decoration: none;
-    font-family: "bahnschrift";
-    
-}
-.nav-con a:link{
-    color: rgb( 12, 15, 58);
-}
-.nav-con a:visited{
-    color: rgb(12, 15, 58);
-}
-.nav-con a:hover{
-    color: rgb(77, 67, 54);
-}
-
-.nav-con ul{
-    padding: 0.1%;
-    text-align: center;
-
-
-}
-
-
-
-.nav{
-    padding: 5%;
-
-}
-
-.banner{
-    
-    vertical-align: bottom;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0.07%;
-}
-.blog-title{
-    text-align: center;
-    font-size: 13pt;
-    font-family: "bahnschrift";
-    
-}
-.blog-title a{
-    text-decoration: none;
-}
-.blog-title a:link{
-    color: rgb( 12, 15, 58);
-
-}
-.blog-title a:visited{
-    color: rgb( 12, 15, 58);
-
-}
-#blog-body{
-    text-indent: 25px;
-    font-size: 10pt;
-    font-family: "bahnschrift";
-    padding: 3%;
-}
-.b{
-    float: left;
-    border-style: solid;
-    border-width: 0.5px;
-    border-radius: 15%;
-    border-color: rgba(75, 61, 35, 0.05);
-    width: 350px;
-    height: 350px;
-    margin: 2%;
-    word-wrap: break-word;
-    padding-top: 0.75%;
-    background-color: rgba(75, 61, 35, 0.05);
-}
-.b ul{
-    list-style: none;
-
-}
-.container{
-    width: 88%
-    
-    
-}
-.pagination{
-    
-    list-style: none;
-    width: 88%;
-    float: left;
-    text-align: center;
-    font-size: 15pt;
-    
-    
-}
-.pagination li{
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
     display: inline-block;
-    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
 
-
-}
-.pagination a{
-    color: black;
-    border-radius: 5px;
-    
-    text-decoration: none;
-}
-
-.pagination a:hover{
-    color: rgb(114, 86, 50);
-}
-.pagination a:active{
-    background-color: rgba(75, 61, 35, 0.05);
-    padding: 8px 16px;
-
-}
-*/
+    .owl-dots {
+      text-align: left;
+      padding-top: 0.5vw;
+      padding-left: 2%;
+    }
+    .owl-dots button.owl-dot {
+      width: 0.7vw;
+      height: 0.7vw;
+      border-radius: 50%;
+      display: inline-block;
+      background: #ccc;
+      margin: 0 0.5%;
+    }
+    .owl-dots button.owl-dot.active {
+      background-color: rgb(26, 26, 26);
+    }
+    .owl-dots button.owl-dot:focus {
+      outline: none;
+    }
+    .owl-nav button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.38) !important;
+    }
+    span {
+        font-size: 70px;    
+        position: relative;
+        top: -5px;
+    }
+    .owl-nav button:focus {
+        outline: none;
+    }
