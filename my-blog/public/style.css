@@ -72,10 +72,7 @@ body{
 
 
 /*Side Menu*/
-.navSpace {
-    width: 0%;
-    height: 4vw;
-}
+
 #overlay {
 
         width: 100vw;
@@ -1035,6 +1032,34 @@ footer {
 
    /* Icon SVG Styles */
 /* Footer Styles End */
+
+/* Category Page Styles */
+
+.navSpace {
+    
+}
+
+
+.categoryNames {
+    width: 100%;
+    background-color: #f5dbb244;
+    height: 7vw;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+.categoryNames h2 {
+    font-size: 2vw;
+
+}
+
+.categoryNames p {
+    font-size:1vw;
+}
+
+/* Category Page Styles End */
 
 @media screen and (max-width: 600px) {
 

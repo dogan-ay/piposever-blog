@@ -15,8 +15,18 @@ class Pagination extends Component
     {
         $posts = BlogPost::orderBy("created_at","desc")->take($this->amount)->get();
 
+        $postCount = BlogPost::count();
+        $control;
+        if ($this->amount >= $postCount) 
+        {
+            $control = true;
+            return view('livewire.pagination', compact('posts','control'));
 
-        return view('livewire.pagination', compact('posts'));
+        }else {
+            return view('livewire.pagination', compact('posts'));
+
+        }
+        
     }
 
     public function load() {

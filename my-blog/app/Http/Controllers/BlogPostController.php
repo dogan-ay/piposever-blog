@@ -27,13 +27,19 @@ class BlogPostController extends Controller
     public function category($category)
     {
         //
-       // $posts = BlogPost::where('category',$category)->orderBy("created_at","desc")->paginate(6);
+        $postCount = BlogPost::where('category',$category)->count();
         
       //  return view('blog.category', [
       //      'categoryName' => $category,
       //  ]
     //);
-        return view('blog.category', compact('category'));
+        //$postCount = $posts->count();
+       /* if ($category == "kategori1") {
+            return view('blog.category', compact('category','postCount'));
+
+        }*/
+        return view('blog.category', compact('category','postCount'));
+
     }
 
     /**
