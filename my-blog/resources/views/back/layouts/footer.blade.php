@@ -64,6 +64,15 @@
 
     <!-- Page level custom scripts -->
     <script src="{{asset('Back/')}}/js/demo/datatables-demo.js"></script>
+    <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <script>
+        var quill = new Quill('#editor', {
+        modules: { toolbar: true },
+        theme: 'snow'
+        });
+
+    </script>
     @yield('js')
     @toastr_js
     @toastr_render

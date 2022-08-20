@@ -8,7 +8,7 @@
                 <div class="article">
                     <div class="row my-4">
                         <div class="col-sm">
-                            <div><h1><strong>{{ ucfirst($post->title) }}</strong></h1></div>
+                            <div id="showTitle"><h1><strong>{{ ucfirst($post->title) }}</strong></h1></div>
 
                         </div>
                         <div class="col-sm">

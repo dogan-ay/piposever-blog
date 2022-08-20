@@ -10,7 +10,8 @@
     <meta name="author" content="">
 
     <title>@yield('title','Piposever Panel')</title>
-
+    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="{{asset('Back/')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link

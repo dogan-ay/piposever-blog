@@ -1,3 +1,16 @@
+:root {
+    --pMobile: 4vw;
+    --hMobile: 6vw;
+    --standardFont: 'Figtree', sans-serif;
+
+
+}
+
+* {
+    font-family: var(--standardFont);
+
+}
+
 .wrapper {
     display:flex;
     flex-direction:row;
@@ -16,7 +29,7 @@ body{
 
 .header-container {
     max-width: 1800px;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--standardFont);
 
 }
 
@@ -149,7 +162,7 @@ main {
     text-align: center;
     border-left: 5px solid #fbf0df;
     background-color: #202020;
-    font-family: 'Port Lligat Sans';
+    font-family: var(--standardFont);
     padding: 4% 0 4% 0;
     margin-bottom: 20%;
     display: flex;
@@ -265,7 +278,7 @@ main {
 
     color: #fbf0df;
     font-size: 1.1vw;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--standardFont);
     text-decoration: none;
     
 }
@@ -367,15 +380,16 @@ main {
 .post{
     display: flex;
     width: 82vw;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    padding: 2.5%;
     margin: 0 auto;
-    padding-left: 1%;
-    padding-right: 1%;
     line-height: 1.3vw;
-    font-family: 'Inter Bold', sans-serif;
+    font-family: var(--standardFont);
     transition: 0.2s;
-    
+    background-color: #f5dbb244;
+    margin-bottom: 3%;
+    border-radius: 0.75em;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
 
 }
 
@@ -400,15 +414,10 @@ main {
 
 @media screen and (min-width: 600px) {
     .post:hover {
-        background-color: #f5e7d2;
-        
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
     }
-    .post:hover h2{
-        color: black;
-    }
-    .post:hover p {
-        color: black;
-    }
+  
     
     
 }
@@ -427,7 +436,7 @@ main {
     max-width: 20vw;
 }
 .postImg img{
-    width: 95%;
+    width: 100%;
     cursor:pointer;
 }
 
@@ -650,7 +659,7 @@ main {
     height: 70%;
     color: #fbf0df;
     /*font-family: "Port Lligat Sans";*/
-    font-family: "Voces";
+    font-family: var(--standardFont);
     font-size: 1.1vw;
 }
 
@@ -751,12 +760,12 @@ main {
 }
 
 .article h1 {
-    font-family: 'Inter Bold', sans-serif;
+    font-family: var(--standardFont);
     font-size: 2.3rem;
 }
 
 .article p {
-    font-family: 'Martel Sans', sans-serif;
+    font-family: var(--standardFont);
 }
 
 .articleDetails {
@@ -814,7 +823,7 @@ main {
 
 #paginationButton a {
     color: #262626;
-    font-family: "Inter";
+    font-family: var(--standardFont);
     font-size: 1vw;
 }
 
@@ -1005,7 +1014,7 @@ footer {
         background-color: #F5DBB2;
         border: 1px solid #F5DBB2;
         color: rgb(17, 17, 17);
-        font-family: "Voces";
+        font-family: var(--standardFont);
         margin-left: 0.5%;
        
     }
@@ -1035,19 +1044,20 @@ footer {
 
 /* Category Page Styles */
 
-.navSpace {
-    
-}
-
-
 .categoryNames {
     width: 100%;
     background-color: #f5dbb244;
     height: 7vw;
     margin-top: 4%;
-    margin-bottom: 1%;
-    padding: 1%;
+    margin-bottom: 4%;
+    padding: 5%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 .categoryNames h2 {
@@ -1057,11 +1067,22 @@ footer {
 
 .categoryNames p {
     font-size:1vw;
+    margin: 0;
 }
 
 /* Category Page Styles End */
 
+
+/* Show Post Styles */
+
+#showTitle {
+    margin-top: 5vw;
+}
+
+/* Show Post Styles End */
+
 @media screen and (max-width: 600px) {
+
 
     .header-container >img {
         display: none;
@@ -1069,30 +1090,30 @@ footer {
 
     .icerik h2 {
         
-        font-size: 4.1vw;
+        font-size: var(--hMobile);
         position: relative;
-        margin-bottom: 1vw;
+        margin: 3vw 0;
     }
     .postDetails p, .postDetails a{
-        font-size: 2.5vw;
+        font-size: var(--pMobile);
     }
 
     .post {
-        width: 100vw;
+        width: 90vw;
         line-height: 4vw;
-        height: 20vw;
-        max-height: 20vw;
-        margin-bottom: 3%;
-        margin-left: 0%;
-
-        padding-left: 5%;
-        padding-right: 5%;
+        height: auto;
+        margin-bottom: 10%;
+        padding: 10% 5%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
        
     }
 
     .postImg{
-        width: 40vw;
-        max-width: 40vw;
+        width: 100%;
+        max-width: 1000%;
         
     }
     .postImg img{
@@ -1100,20 +1121,24 @@ footer {
         cursor:pointer;
     }
     .icerik > p{
-        font-size: 2.7vw;
+        font-size: var(--pMobile);
         overflow:hidden; 
         text-overflow:ellipsis; 
         display: -webkit-box;
         -webkit-line-clamp: 2; 
         -webkit-box-orient: vertical;
+        margin-bottom: 3%;
+        line-height: 6vw;
+
     }
     
     .icerik {
-        padding-right: 3%;
+        width: 100%;
+        padding: 0;
     }
         
     .postDetails {
-        border: none;
+        padding-top: 3%;
     }
     .postDetails strong {
         padding-right: 1vw;
@@ -1220,23 +1245,24 @@ footer {
     }
 
     .firstContent h3 {
-        font-size: 7vw;
+        font-size: 8vw;
         padding: 2vw 0;
 
     }
 
     .firstContent p {
-        font-size: 2.5vw;
+        font-size: var(--pMobile);
     }    
 
     /* First Post Styles End */
     .postUp {
-        width: 50vw;
-        margin-bottom: 5%;
+        width: 100vw;
+        margin-bottom: 10%;
     }
 
     .postUp p{
-        font-size: 4vw;
+        font-size: 6vw;
+        margin: 0;
     }
 
     /* Comments Styles */
@@ -1245,7 +1271,7 @@ footer {
         flex-direction: column;
         height: auto;
         padding: 15% 5%;
-        margin: 5% 0;
+        margin: 10% 0;
     }
     
     #commentsSlideContainer {
@@ -1419,17 +1445,46 @@ footer {
         font-size: 3vw;
     }
     #footerRight input {
-        width: 80%;
+        width: 75%;
         height: 8vw;
         font-size: 3vw;
 
     }
     #footerRight button {
-        width: 20%;
+        width: 25%;
         height: 8vw;
         font-size: 3vw;
     }
+    #footerText {
+        padding-bottom: 1%;
+    }
     /* Footer Styles End */
+
+    /* Category Page Styles */
+
+    .categoryNames {
+        margin-top: 12%;
+        margin-bottom: 10%;
+
+        height: 20vw;
+        padding: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .categoryNames h2 {
+        font-size: 6vw;
+    
+    }
+    
+    .categoryNames p {
+        font-size:3vw;
+        margin: 0;
+    }
+
+    /* Category Page Styles End */
 
 }
 
