@@ -7,8 +7,8 @@
 
 <div class="navSpace"></div>
 <div class="categoryNames">
-    <h2>{{$category}} Kategorisi</h2>
-    <p>{{$postCount}} blog yazısı</p>
+    <div><h2>{{$category}} Kategorisi</h2>
+    <p>{{$postCount}} blog yazısı</p></div>
 </div>
 
 @livewire('category', ['category' => $category])
