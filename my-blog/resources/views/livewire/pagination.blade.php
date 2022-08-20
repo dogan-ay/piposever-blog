@@ -1,4 +1,5 @@
 <div class="cont">
+<div class="postUp"><div><p>Son Yazılar</p></div></div>
 
         
                     @foreach($posts as $post)
@@ -10,11 +11,9 @@
                             <h2 class="titleMnp" x-data="{url: '/blog/{{$post->id}}'}" @click="location.replace(url)"
                             
                             ><strong>{{$post->title}}</strong></h2>
-                            @php
-                            $postPassage = substr($post->body, strpos($post->body,'>')+1);
-                            @endphp
+                            
                             <p x-data="{url: '/blog/{{$post->id}}'}" @click="location.replace(url)"
-                            >{{ Str::limit ($postPassage,470)}}</p>
+                            >{{ Str::limit ($post->body,470)}}</p>
                             <div class="postDetails">
                                 @php
                                 \Carbon\Carbon::setLocale('tr');
