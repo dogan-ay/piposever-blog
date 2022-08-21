@@ -202,7 +202,11 @@ main {
     width: 100%;
 }
 .iconContainer {
-    width: 3vw;
+    width: 3.1vw;
+}
+
+.iconContainer img{
+    width: 100%;
 }
 
 .categoryRow {
@@ -210,7 +214,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    padding-left: 30%;
+    padding-left: 10%;
     padding-top: 5%;
 
 }
@@ -323,6 +327,31 @@ main {
     
 }
 
+.navCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-left: 5%;
+}
+
+.navElements {
+    display: flex;
+    align-items: center;
+
+}
+
+.navElements a {
+    text-decoration: none;
+    color: #403b31;
+    transition: 0.5s;
+    
+}
+
+
+.navElements:hover a {
+    color: black;
+}
 /*New Navbar End*/
 
 /*İndex styles*/

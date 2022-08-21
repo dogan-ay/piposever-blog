@@ -76,17 +76,31 @@
                                         </a>
                                     </div>                                     
                                 </div>  
+                        <div class="navLogo">                            
+                            <div id="logoText">
+                                <img src="{{asset('piposever1.svg')}}" alt="">
+                            </div>
 
-                    <div class="navLogo">                            
+                        
                         </div>
-                        <div id="logoText">
-                            <img src="{{asset('piposever1.svg')}}" alt="">
-                        </div>
+                            <div class="navCategory">
+                                <div class="navElements">
+                                    <a href="">Pipo</a>
+                                </div>
+                                <div class="navElements">
+                                    <a href="">Tütün</a>
+                                </div>
+                                <div class="navElements">
+                                    <a href="">Piposeverler</a>
+                                </div>
+                                <div class="navElements">                              
+                                    <a href="">Yorumlar</a>
+                                </div>
+                            </div>                            
 
-                    
-                    </div>
-                                                                                                                                                                                             
+
                 </div>
+                                                                                                                                                                                             
                 <div id="overlay" class="" onclick="closeMenu()"></div>
 
                 <div id="categoryMenu" class="">
@@ -112,16 +126,22 @@
                                     <a href="">Pipo</a>
                                 </div>
                                 <div class="categoryRow">
-                                    <div class="iconContainer">
-                                        <img src="{{asset('coffeeicon.svg')}}" alt="">
+                                    <div class="pngContainer">
+                                        <img src="{{asset('categoryicon2.png')}}" alt="">
                                     </div>
-                                    <a href="">Kahve</a>
+                                    <a href="">Tütün</a>
+                                </div>
+                                <div class="categoryRow">
+                                    <div class="pngContainer">
+                                        <img src="{{asset('categoryicon3.png')}}" alt="">
+                                    </div>
+                                    <a href="">Piposeverler</a>
                                 </div>
                                 <div class="categoryRow">
                                     <div class="iconContainer">
-                                        <img src="{{asset('teaicon.svg')}}" alt="">
+                                        <img src="{{asset('categoryicon4.svg')}}" alt="">
                                     </div>
-                                    <a href="">Çay</a>
+                                    <a href="">Yorumlar</a>
                                 </div>
 
                             </div>
