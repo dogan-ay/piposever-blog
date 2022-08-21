@@ -34,13 +34,13 @@
                 <img src="{{asset('test.jpg')}}" alt="">
             </div>
             <div id="trendFirstText">
-                <h3>Lorem ipsum dolor sit. </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque beatae dicta. Ea accusantium omnis necessitatibus perspiciatis sint, eaque debitis.</p>
+                <h3>{{$posts[0]->title}}</h3>
+                <p>{{ Str::limit ($posts[0]->body,500)}}</p></p>
             </div>
         </div>
         <div id="trendSecondContainer">
             <div class="trendMiniPost">
-
+                
             </div>
             <div class="trendMiniPost">
                 
