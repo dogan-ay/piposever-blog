@@ -9,7 +9,7 @@ class TrendPost extends Component
 {
     public function render() 
     {
-        $posts = BlogPost::orderBy("created_at","desc")->take(3)->get();
+        $posts = BlogPost::orderBy("created_at","desc")->take(4)->get();
 
         return view('livewire.trend-post', compact('posts'));
     }
