@@ -246,7 +246,7 @@ main {
     top: 0;
     width: 100%;
     height: 4vw;
-    background-color: rgb(17, 17, 17);
+    background-color: #fcf3e5;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -255,6 +255,7 @@ main {
     padding-left: 9.5%;
     transition: left 0.5s;
     left: 0;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
     
 }
@@ -332,25 +333,25 @@ main {
 
 }
 .firstCon {
+   width: 35%;
+   padding: 3%;
+}
+
+#firstCard {
+    background-color: #fff8ec;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+    width: 100%;
     display: flex;
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
-    height: 26.799vw;
+    padding: 1%;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
 }
 
-.firstPost {
-    background-color: rgb(26, 26, 26);
-    width: 33%;
-    color: #fbf0df;
-
-    
-}
-
-.firstContent {
-    padding: 3vw;
-}
-
-.firstContent h3 {
+#firstCard h3 {
     font-size: 2.5vw;
     padding: 1vw 0 1vw 0;
     transition: 0.5s;
@@ -358,7 +359,7 @@ main {
     
 }
 
-.firstContent p {
+#firstCard p {
     font-size: 1vw;
     text-overflow:ellipsis; 
     display: -webkit-box;
@@ -370,27 +371,83 @@ main {
 
 
 .firstImg {
-    width: 67%;
+    width: 65%;
 }
 .firstImg img{
     width: 100%;
+    border-radius: 1em;
+
 }
 /* First Content Styles End */
 
+
+/* Trend Post Styles */
+
+#trendContainer {
+    width: 80vw;
+    height: 40vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 2.5%;
+}
+
+#trendFirstContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 1em;
+    background-color: #fff8ec;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    padding: 1%;
+
+}
+
+#trendSecondContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+
+}
+
+.trendMiniPost {
+    background-color: #fff8ec;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+    width: 100%;
+    height: 33%;
+    border-radius: 1em;
+
+}
+
+#trendFirstImg {
+    width: 100%;
+}
+
+#trendFirstImg img{
+    border-radius: 1em;
+
+    width: 100%;
+}
+
+#trendFirstText {
+    padding: 3% 1%;
+}
+/* Trend Post Styles End */
+
 .post{
     display: flex;
-    width: 82vw;
-    padding: 2.5%;
+    width: 80vw;
     margin: 0 auto;
     line-height: 1.3vw;
     font-family: var(--standardFont);
     transition: 0.2s;
-    background-color: #f5dbb244;
+    background-color: #fff8ec;
     margin-bottom: 3%;
-    border-radius: 0.75em;
+    border-radius: 1em;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
-
+    align-items: center;
 }
 
 
@@ -425,19 +482,22 @@ main {
 
 .icerik {
     width: 60vw;
-    padding-right: 3%;
+    padding: 2.5%;
 
 }
 .icerik>p {
     cursor: pointer;
 }
 .postImg{
-    width: 20vw;
-    max-width: 20vw;
+    width: 23vw;
+    max-width: 23vw;
+    padding-right: 1%;
+    
 }
 .postImg img{
     width: 100%;
     cursor:pointer;
+    border-radius: 1em;
 }
 
 .postDetails {
