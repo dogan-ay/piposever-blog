@@ -107,7 +107,7 @@ body{
     width: 20vw;
     height: 100%;
     box-shadow: 0 6px 6px #26262641;
-    background-color: #262626;
+    background-color: antiquewhite;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -150,7 +150,7 @@ main {
 }
 
 #menuText {
-    color: #fbf0df;
+    color: #262626;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -158,10 +158,8 @@ main {
 #pipeLover {
     width: 100%;
     height: 20%;
-    color: #fbf0df;
+    color: #262626;
     text-align: center;
-    border-left: 5px solid #fbf0df;
-    background-color: #202020;
     font-family: var(--standardFont);
     padding: 4% 0 4% 0;
     margin-bottom: 20%;
@@ -195,11 +193,22 @@ main {
 }
 
 .pngContainer {
+    display: flex;
+    justify-content: center;
     width: 3vw;
 }
 
-.pngContainer img {
+.ic1 img {
     width: 100%;
+}
+.ic2 img {
+    width: 115%;
+}
+.ic3 img {
+    width: 90%;
+}
+.ic4 img {
+    width: 80%;
 }
 .iconContainer {
     width: 3.1vw;
@@ -228,7 +237,7 @@ main {
 
 .categoryRow a {
     text-decoration: none;
-    color: #fbf0df;
+    color: #262626;
     font-size: 1.3vw;
     padding-left: 8%;
 }
@@ -238,7 +247,7 @@ main {
     
 }
 .categoryRow a:hover {
-    color: #fbf0df;
+    color: #1a1a1a;
 }
 /*Side Menu End*/
 
@@ -435,17 +444,21 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 11%;
 
 }
 
 .trendMiniPost {
     background-color: #fff8ec;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-
     width: 100%;
-    height: 33%;
+    height: 26%;
+    max-height: 26%;
     border-radius: 1em;
+    display: flex;
+    padding: 2%;
+    gap: 3%;
+    align-items: center;
 
 }
 
@@ -461,6 +474,121 @@ main {
 
 #trendFirstText {
     padding: 3% 1%;
+    font-size: 1vw;
+}
+
+#trendFirstText h3{
+    padding-top: 2.5%;
+    font-size: 2vw;
+}
+
+#trendFirstText p{
+    padding: 3% 0;
+    font-size: 1vw;
+    margin: 0;
+}
+
+#trendFirstRow {
+    display: flex;
+    gap: 1%;
+    background-color: #fbf0df; 
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.trendIconContainer {
+    width: 6%;
+}
+
+#trendFirstRow p{
+    font-size: 1.2vw;
+    font-style: italic;
+    margin: 0;
+    color: #414141;
+}
+
+#trendFirstRow a {
+    color: #414141;
+    font-size: 1.2vw;
+    text-decoration: none;
+
+}
+
+#trendFirstButton {
+    padding: 2% 10%;
+    margin: 0 5%;
+    background-color: #f5e7d2;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#trendFirstButton:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+}
+
+#trendFirstButton a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #262626;
+}
+
+.trendMiniImg {
+    width: 50%;
+}
+
+.trendMiniImg img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+.trendMiniContent {
+    width: 47%;
+    padding: 1%;
+
+}
+
+.trendMiniContent h3{
+    font-size: 1.5vw;
+    padding-bottom: 2%;
+}
+
+.trendIconMini {
+    width: 12%;
+}
+
+.trendMiniDetails {
+    display: flex;
+    align-items: center;
+    background-color: #fbf0df; 
+    border-radius: 50px;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.trendMiniDetails a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #414141;
+    padding: 5% 0;
+}
+
+.trendMiniDetails:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+
+}
+
+.trendMiniDetails a:hover{
+    color: #414141;
+}
+
+.miniA1 {
+    width: 15%;
+
+    padding-right: 2%;
 }
 /* Trend Post Styles End */
 
@@ -551,9 +679,9 @@ main {
 }
 
 .postDetails a {
-    color: #262626;
+    color: #8d867c;
     text-decoration: none;
-    background-color: #77726b4f;
+    background-color: #fbf0df;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     padding-top: 0.09vw;
@@ -565,8 +693,8 @@ main {
 }
 
 .postDetails a:hover {
-    color: #fbf0df;
-    background-color: #292929;
+    color: #474545;
+    background-color: antiquewhite;
 }
 
 .postUp {
@@ -702,9 +830,10 @@ main {
     margin: 0 auto;
     width: 20vw;
     height: 20vw;
-    border: 1px #262626 solid;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
 }
 
 
@@ -808,7 +937,6 @@ main {
 #commentButton {
     width: 100%;
     height: 8%;
-    border: 0.1vw solid rgb(26, 26, 26);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -816,7 +944,16 @@ main {
     gap: 7%;
     cursor: pointer;
     margin-top: 5%;
+    background-color: #fbf0df;
+    border-radius: 50px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
 }
+
+#commentButton:hover {
+    
+}
+
 #commentButton a {
     color: rgb(26, 26, 26);
     text-decoration: none;
@@ -903,31 +1040,29 @@ main {
     margin-bottom: 10%;
     width: 15vw;
     height: 3vw;
-    border: 0.1vw solid #262626;
     cursor: pointer;
     transition: 0.5s;
+    background-color: #fff8ec;
+    border-radius: 50px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
 
 
 }
 
 #paginationButton a {
-    color: #262626;
+    color: #414141;
     font-family: var(--standardFont);
     font-size: 1vw;
 }
 
 #paginationButton:hover {
-    background-color: #262626;
+    background-color: antiquewhite;
     color: #fbf0df;
 }
 
-#paginationButton:hover a{
-    color: #fbf0df;
-
-}
 
 #paginationButton:hover > #arrowSvg > svg{
-    fill: #fbf0df;
 }
 
 #arrowSvg {
