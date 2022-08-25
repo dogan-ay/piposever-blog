@@ -34,19 +34,67 @@
                 <img src="{{asset('test.jpg')}}" alt="">
             </div>
             <div id="trendFirstText">
+                
                 <h3>{{$posts[0]->title}}</h3>
-                <p>{{ Str::limit ($posts[0]->body,500)}}</p></p>
+                <p>{{ Str::limit ($posts[0]->body,300)}}</p></p>
+                <div id="trendFirstRow">
+                    <div class="trendIconContainer ic1">
+                        <img src="{{asset('pipeicon.png')}}" alt="">
+                    </div>
+                    <div>
+                        <a href="">{{$posts[0]->category}}</a>
+                    </div>
+                    <div id="trendFirstButton">
+                        <a href="">okumaya devam et</a>
+                    </div>
+                    <div>
+                    <p> {{Str::readDuration($post->body). ' dk. okuma'}}</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="trendSecondContainer">
             <div class="trendMiniPost">
-                
+                <div class="trendMiniImg">
+                    <img src="{{asset('test.jpg')}}" alt="">
+                </div>
+                <div class="trendMiniContent">
+                    <h3>{{$posts[1]->title}}</h3>
+                    <div class="trendMiniDetails">
+                        <div class="miniA1 ic2">
+                            <img src="{{asset('categoryicon2.png')}}" alt="">
+                        </div>
+                        <a href="">Tütün</a>
+                    </div>
+                </div>
             </div>
             <div class="trendMiniPost">
-                
+                <div class="trendMiniImg">
+                    <img src="{{asset('test.jpg')}}" alt="">
+                </div>
+                <div class="trendMiniContent">
+                    <h3>{{$posts[2]->title}}</h3>
+                    <div class="trendMiniDetails">
+                        <div class="trendIconMini ic3">
+                            <img src="{{asset('categoryicon3.png')}}" alt="">
+                        </div>
+                        <a href="">Piposeverler</a>
+                    </div>
+                </div>
             </div>
             <div class="trendMiniPost">
-                
+                <div class="trendMiniImg">
+                    <img src="{{asset('test.jpg')}}" alt="">
+                </div>
+                <div class="trendMiniContent">
+                    <h3>{{$posts[3]->title}}</h3>
+                    <div class="trendMiniDetails">
+                        <div class="trendIconMini ic4">
+                            <img src="{{asset('categoryicon4.png')}}" alt="">
+                        </div>
+                        <a href="">Yorumlar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
