@@ -120,26 +120,26 @@
                             </div>
                             <div class="categoryMenuList">
                                 <div class="categoryRow">
-                                    <div class="pngContainer">
+                                    <div class="pngContainer ic1">
                                         <img src="{{asset('pipeicon.png')}}" alt="">
                                     </div>
                                     <a href="">Pipo</a>
                                 </div>
                                 <div class="categoryRow">
-                                    <div class="pngContainer">
+                                    <div class="pngContainer ic2">
                                         <img src="{{asset('categoryicon2.png')}}" alt="">
                                     </div>
                                     <a href="">Tütün</a>
                                 </div>
                                 <div class="categoryRow">
-                                    <div class="pngContainer">
+                                    <div class="pngContainer ic3">
                                         <img src="{{asset('categoryicon3.png')}}" alt="">
                                     </div>
                                     <a href="">Piposeverler</a>
                                 </div>
                                 <div class="categoryRow">
-                                    <div class="iconContainer">
-                                        <img src="{{asset('categoryicon4.svg')}}" alt="">
+                                    <div class="pngContainer ic4">
+                                        <img src="{{asset('categoryicon4.png')}}" alt="">
                                     </div>
                                     <a href="">Yorumlar</a>
                                 </div>
