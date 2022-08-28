@@ -41,7 +41,7 @@
                     <div class="trendIconContainer ic1">
                         <img src="{{asset('pipeicon.png')}}" alt="">
                     </div>
-                    <div>
+                    <div id="firstCategoryName">
                         <a href="">{{$posts[0]->category}}</a>
                     </div>
                     <div id="trendFirstButton">

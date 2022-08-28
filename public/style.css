@@ -379,7 +379,6 @@ main {
     background-color: #fff8ec;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
-    width: 100%;
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -584,6 +583,7 @@ main {
 .trendMiniDetails p{
     margin: 0;
     color: #646464;
+    font-size: 1vw;
 }
 
 .miniA1 {
@@ -1331,7 +1331,7 @@ footer {
         line-height: 4vw;
         height: auto;
         margin-bottom: 10%;
-        padding: 10% 5%;
+        padding: 2% 2% 5% 2%;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -1341,7 +1341,8 @@ footer {
 
     .postImg{
         width: 100%;
-        max-width: 1000%;
+        max-width: 100%;
+        padding: 0;
         
     }
     .postImg img{
@@ -1362,7 +1363,7 @@ footer {
     
     .icerik {
         width: 100%;
-        padding: 0;
+        padding: 0 2%;
     }
         
     .postDetails {
@@ -1382,7 +1383,7 @@ footer {
     .navRow {
         height: 12vw;
         padding-left: 5%;
-        gap: 15%;
+        gap: 30%;
 
     }
 
@@ -1392,6 +1393,10 @@ footer {
 
     #kategoriButon {
         width: 5%;
+    }
+
+    .navCategory {
+        display: none;
     }
 
     /* Navbar Styles End */
@@ -1448,41 +1453,105 @@ footer {
     /* First Post Styles */
 
     #firstWrapper {
-        margin: 22% 0 10% 0;
+        margin: 20vw 0 10% 0;
     
     }
 
-    .firstCon {
+    #firstCard {
         flex-direction: column-reverse;
-        width: 90vw;
-        height: auto;
-    }
-
-    .firstPost {
-        width: 100%;
-        height: auto;
+        width: 90%;
+        padding: 2%;
     }
 
     .firstImg {
         width: 100%;
-
     }
 
-    .firstContent {
-        padding: 7vw;
+    .firstCon {
+        width: 100%;
     }
 
-    .firstContent h3 {
-        font-size: 8vw;
-        padding: 2vw 0;
-
+    #firstCard h3 {
+        font-size: var(--hMobile);
     }
 
-    .firstContent p {
+    #firstCard p {
         font-size: var(--pMobile);
-    }    
-
+    }
     /* First Post Styles End */
+
+    /* Trend Post Styles */
+
+    #trendContainer {
+        width: 90vw;
+        height: auto;
+        gap: 0;
+        flex-direction: column;
+    }
+    
+    #trendFirstContainer {
+        width: 100%;
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+
+    #trendSecondContainer {
+        width: 100%;
+    }
+
+    #trendFirstText h3{
+        font-size: var(--hMobile);
+    }
+
+    #trendFirstText p{
+        font-size: var(--pMobile);
+        color: #414141;
+
+    }
+
+    #firstCategoryName a {
+        display: none;
+
+    }
+
+    #trendFirstRow p {
+        font-size: 3vw;
+    }
+
+    #trendFirstButton {
+        padding: 5% 5%;
+    }
+
+    #trendFirstButton a{
+        color: #262626;
+        font-size: var(--pMobile);
+    }
+
+    .trendIconContainer {
+        width: 10%;
+    }
+
+    .trendMiniContent h3 {
+        font-size: 5vw;
+    }
+
+    .trendMiniContent p {
+        font-size: 3vw;
+    }
+
+    .trendMiniPost {
+        margin-bottom: 5%;
+    }
+
+    .trendIconMini {
+        width: 15%;
+    }
+
+    .miniA1 {
+        width: 18%;
+    }
+
+    /* Trend Post Styles End */
     .postUp {
         width: 100vw;
         margin-bottom: 10%;
@@ -1540,8 +1609,7 @@ footer {
 
     #commentButtonMobile {
         width: 60%;
-        height: 8%;
-        border: 0.1vw solid rgb(26, 26, 26);
+        height: 10vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1550,7 +1618,11 @@ footer {
         cursor: pointer;
         margin: 0 auto;
         margin-top: 10%;
-        padding: 1%; 
+        padding: 1%;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        border-radius: 50px;
+        background-color: #fff8ec;
+
     }
 
     #commentButtonMobile a {
@@ -1613,12 +1685,12 @@ footer {
     /* Pagination Button Styles */
 
     #paginationButton {
-        width: 50vw;
+        width: 60vw;
         height: 10vw;
     }
     
     #paginationButton a{
-       font-size: 2.7vw;
+       font-size: var(--pMobile);
     }
 
     /* Pagination Button Styles End */
