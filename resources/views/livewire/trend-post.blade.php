@@ -48,7 +48,7 @@
                         <a href="">okumaya devam et</a>
                     </div>
                     <div>
-                    <p> {{Str::readDuration($post->body). ' dk. okuma'}}</p>
+                    <p> {{Str::readDuration($posts[0]->body). ' dk. okuma'}}</p>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                         <div class="miniA1 ic2">
                             <img src="{{asset('categoryicon2.png')}}" alt="">
                         </div>
-                        <a href="">Tütün</a>
+                        <p> {{Str::readDuration($posts[1]->body). ' dk. okuma'}}</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                         <div class="trendIconMini ic3">
                             <img src="{{asset('categoryicon3.png')}}" alt="">
                         </div>
-                        <a href="">Piposeverler</a>
+                        <p> {{Str::readDuration($posts[2]->body). ' dk. okuma'}}</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                         <div class="trendIconMini ic4">
                             <img src="{{asset('categoryicon4.png')}}" alt="">
                         </div>
-                        <a href="">Yorumlar</a>
+                        <p> {{Str::readDuration($posts[3]->body). ' dk. okuma'}}</p>
                     </div>
                 </div>
             </div>
