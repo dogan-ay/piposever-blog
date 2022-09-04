@@ -1,3 +1,7 @@
+@php
+$posts->shift();
+@endphp
+
 <div class="cont">
 <div class="postUp"><div><p>Son Yazılar</p></div></div>
 
@@ -25,7 +29,7 @@
                                 <div><a href="/category/{{$post->category}}">{{$post->category}}</a></div>
                             </div>
                         </div>
-                        <div class="postImg"><img src="{{asset('test.jpg')}}" alt=""
+                        <div class="postImg"><img src="{{asset($post->image)}}" alt=""
                             x-data="{url: '/blog/{{$post->id}}'}" @click="location.replace(url)"></div>
                     </div>
                     @endforeach
