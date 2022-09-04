@@ -14,7 +14,6 @@ class Pagination extends Component
     public function render()
     {
         $posts = BlogPost::orderBy("created_at","desc")->take($this->amount)->get();
-
         $postCount = BlogPost::count();
         $control;
         if ($this->amount >= $postCount) 
