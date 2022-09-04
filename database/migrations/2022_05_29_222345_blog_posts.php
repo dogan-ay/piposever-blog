@@ -21,6 +21,7 @@ class BlogPosts extends Migration
             $table->string('category');
 
 
+
         });
     }
 
