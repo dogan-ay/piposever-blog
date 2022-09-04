@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Back;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\BlogPOst;
+use Illuminate\Support\Str;
 
 class ArticleController extends Controller
 {
@@ -41,6 +42,14 @@ class ArticleController extends Controller
         $article->title=$request->title;
         $article->category=$request->category;
         $article->body=$request->content;
+        $article->click = 0;
+
+        if ($request->hasFile('image')) {
+           $imgName = Str::slug($request->title).'.'.$request->image->getClientOriginalExtension();
+           $request->image->move(public_path('images'),$imgName);
+           $article->image = 'images/'.$imgName;
+        }
+
         $article->save();
         
         toastr()->success('Başarılı', 'Blog İçeriği Oluşturuldu');

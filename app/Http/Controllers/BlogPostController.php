@@ -78,7 +78,10 @@ class BlogPostController extends Controller
      */
     public function show(BlogPost $blogPost)
     {
-        //
+        // 
+        $blogPost->click = $blogPost->click + 1;
+        $blogPost->save();
+        
         return view('blog.show', [
             'post' => $blogPost,
         ]);

@@ -1,6 +1,6 @@
 @extends('back.layouts.master')
 @section('title',$article->title.' İçeriğini Güncelle')
-@section('content')
+@section('content') 
 <div class="card shadow nb-4">
     <div class="card-body">
         <form method="POST" action="{{route('admin.makaleler.update',$article->id)}}" enctype="multipart/form-data">
@@ -28,17 +28,7 @@
 
 @endsection
 @section('css')
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 @endsection
 @section('js')
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-<script>
-    $(document).ready(function() {
-  $('#editor').summernote(
-      {
-          height:300
-      }
-  );
-});
-</script>
+
 @endsection
