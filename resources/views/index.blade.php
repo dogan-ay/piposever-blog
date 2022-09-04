@@ -3,23 +3,7 @@
    
 @section('content')
     <main>
-            <div id="firstWrapper">
-                <div id="firstCard">
-                    <div class="firstCon">                          
-                        <p>Son Blog İçeriği</p>
-                        <h3>Lorem lorem- lorem </h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, libero.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in corporis minima debitis. Ratione ab inventore molestiae officia, sint modi!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt maiores quaerat quia modi repudiandae voluptatem distinctio reprehenderit molestiae nam neque.
-                        </p>                              
-                    </div>
-                    <div class="firstImg">
-                            <div class="">
-                                <img src="{{asset('test.jpg')}}">
-                            </div>
-                    </div>
-                </div>
-            </div>
+            <livewire:firstpost /> 
             <livewire:trend-post /> 
             <livewire:comments /> 
 
