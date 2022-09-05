@@ -62,7 +62,14 @@
     <script src="{{asset('Back/')}}/vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="{{asset('Back/')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-    <!-- Page level custom scripts -->
+
+
+
+
+    
+
+<script>
+
     <script src="{{asset('Back/')}}/js/demo/datatables-demo.js"></script>
     <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
@@ -73,6 +80,9 @@
         });
 
     </script>
+
+    
+
     @yield('js')
     @toastr_js
     @toastr_render

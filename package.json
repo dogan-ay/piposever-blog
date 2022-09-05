@@ -17,5 +17,10 @@
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.53.0",
         "sass-loader": "^12.1.0"
+    },
+    "dependencies": {
+        "filepond-plugin-image-edit": "^1.6.3",
+        "filepond-plugin-image-preview": "^4.6.11",
+        "filepond-plugin-image-transform": "^3.8.7"
     }
 }

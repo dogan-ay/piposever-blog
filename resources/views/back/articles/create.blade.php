@@ -16,24 +16,24 @@
                     <option value="Tütün">Tütün</option>
                     <option value="Piposeverler">Piposeverler</option>
                     <option value="Yorumlar">Yorumlar</option>
-                </select>               
+                </select>                
             </div>
             <div class="form-group">
                 <label for="">İçerik Görseli</label>
-
+            <!-- Filepond 
                     <div class="input-group mb-3">
 
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="gorsel">Yükle</span>
+                            <span class="input-group-text" id="">Yükle</span>
                         </div>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="gorsel" name="image" aria-describedby="inputGroupFileAddon01">
+                            <input type="file" class="custom-file-input gorselYukle" id="gorsel" name="image" aria-describedby="inputGroupFileAddon01">
                             <label class="custom-file-label" for="gorsel">Görsel seç</label>
                         </div>
                     </div>
             </div>
-
-
+            -->
+            <input type="file" name="image" id="gorsel">
             <div class="form-group">
                 <label for="content">Metin</label>
                 <textarea name="content" id="editor" class="form-control" rows="10" required></textarea>
@@ -51,4 +51,7 @@
 @endsection
 @section('js')
 
+<script>
+
+</script>
 @endsection
